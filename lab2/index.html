@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body {background-color: #F0F8FF;}
+		label{font-weight: bold; color: DarkSlateBlue}
+		number{font-size: 15pt; color: coral;}
+		.extra number{font-size: 15pt; color: DarkSeaGreen;}
+		#ul{text-decoration: underline;}
+	</style>
+</head>
+<body>
+	<label id="ul">Color: 
+		<input type="color" autofocus />
+	</label>
+	<p><label>Date: 
+		<input type="date">
+	</label>
+	<p><label>Email: 
+		<input type="email" name="email" placeholder="name@domaim.com">
+	</label>
+	<p><label>Number: 
+		<input type="number" name="number" min="0" max="7" value="4">
+	</label>
+	<p><label class="extra">Range: <number>0</number>
+		<input type="range" name="range" min="0" max="20"><number>20</number>
+	</label>
+	<p><label>Search: 
+		<input type="search" name="search" placeholder="search query">
+	</label>
+	<p><label>Time: 
+		<input type="time" name="time">
+	</label>
+	<p>
+		<input type="submit" name="submit">
+		<input type="reset" name="reset">
+	</p>
+	<p>
+		<a href="https://mina0829.github.io/lab2/HW2.html" title="Next Page">next page</a> 
+	</p>
+</body>
+</html>

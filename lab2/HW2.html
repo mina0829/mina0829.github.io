@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{background-color: Thistle;}
+		label, thead{font-size: 12pt; font-weight: bold; color: DarkSlateBlue;}
+		#options1{color: AliceBlue;}
+		.options2{color: LavenderBlush;}
+	</style>
+	<title>About Me</title>
+</head>
+<body>
+	<table border="2" style=" width:45%" >
+		<thead>
+			<tr>
+				<th colspan="3" height="35px"><center>About -- 111306014</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="3" width="200px">
+					<center><img src="燉飯.jpg" alt = "Pork Rice with Béchamel sauce" height="115px"></center>
+					&ensp;<label>personal photo</label>
+				</td>
+				<td colspan="2" height="60px">
+					<label>&ensp;Name: 
+						<input name = "name" type = "text" size = "15" maxlength = "15">
+					</label>
+					<br><label style="float:left;" >&ensp;Gender: </label>
+						<form id="options1">
+							<input type="radio" name="gender" value="male" > Male
+							<input type="radio" name="gender" value="female" > Female
+							<input type="radio" name="gender" value="other" > Other
+						</form>
+				</td>
+			</tr>
+			<tr>
+				<td height="40px"><label style="float:left;">&ensp;Country:&ensp;</label>
+					<form action="/action_page.php" style="float:left;">
+						<select name = "country">
+							<option value = "Taipei" > Taipei </option>
+							<option value = "Tainan" > Tainan </option>
+							<option value = "Taichung" > Taichung </option>
+							<option value = "Taoyuan" > Taoyuan </option>
+						</select>
+					</form>
+				</td>
+				<td height="40px"><label>&ensp;Birthday:&ensp;</label>
+					<input type="date" name="birthday">
+				</td>
+			</tr>
+			<tr>
+				<td colspan="2" height="40px"><label>&ensp;E-mail:&ensp;</label>
+					<input name = "mail" type = "text" size = "20" maxlength = "50">
+				</td>
+			</tr>
+			<tr>
+				<td  height="40px">
+					<label>&ensp;Hobby</label>
+				</td>
+				<td colspan="2"  height="40px">
+					<form action="/action_page.php" method="get" class="options2">
+						&ensp;<input type="checkbox" name="hobby" value="swimming"> Swimming
+						&ensp;<input type="checkbox" name="hobby" value="volleyball"> Volleyball
+						&ensp;<input type="checkbox" name="hobby" value="movie"> Movie
+						&ensp;<input type="checkbox" name="hobby" value="game"> Game
+						&ensp;<input type="checkbox" name="hobby" value="sleep"> Sleep
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td height="40px"><label>&ensp;Skill</label></td>
+				<td colspan="2" height="40px">
+					<form action="/action_page.php" method="get" class="options2">
+						&ensp;<input type="checkbox" name="skill" value="java"> Java
+						&ensp;<input type="checkbox" name="skill" value="html"> HTML
+						&ensp;<input type="checkbox" name="skill" value="python"> Python
+						&ensp;<input type="checkbox" name="skill" value="microsoft office"> Microsoft Office
+						&ensp;<input type="checkbox" name="skill" value="premiere"> Premiere
+					</form>
+				</td>
+			</tr>
+			<tr>
+				<td height="40px"><label>&ensp;Say Something</label></td>
+				<td colspan="2" height="40px">
+					&ensp;<textarea name="message" cols="30" rows="1" 
+					placeholder="Say something here."></textarea>
+				</td>
+			</tr>
+		</tbody>
+</body>
+</html>
