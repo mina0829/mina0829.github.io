@@ -1,0 +1,26 @@
+@media screen{
+	body{
+		background-color: LavenderBlush;
+		font-size: 15pt;
+		font-family: serif, Microsoft JhengHei, cursive;
+	}
+	label{
+		margin-left: auto;
+		margin-right: auto;
+	}
+	div{
+		float: left;
+	}
+}
+
+@media print{
+	body{
+		background-color: white;
+		font-size: 15pt;
+		font-family: serif, Microsoft JhengHei, cursive;
+	}
+	label{
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
