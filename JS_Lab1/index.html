@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>ex1</title>
+</head>
+<body>
+	<script>
+		var s1;
+		var s2;
+		var num1;
+		var num2;
+
+		s1 = window.prompt("Enter first integer: ");
+		s2 = window.prompt("Enter second integer: ");
+
+		num1 = parseInt(s1);
+		num2 = parseInt(s2);
+
+		if(num1 > num2){
+			document.body.style.backgroundColor = 'lightblue';
+			document.writeln(num1 + ">" + num2);
+		}else if(num1 < num2){
+			document.body.style.backgroundColor = 'lightgreen';
+			document.writeln(num1 + "<" + num2);
+		}else{
+			document.body.style.backgroundColor = 'lightyellow';
+			document.writeln(num1 + "==" + num2);
+		}
+
+	</script>
+
+	<input type="button" value="first input" onclick="alert(num1)">
+	<input type="button" value="second input" onclick="alert(num2)">
+</body>
+</html>
