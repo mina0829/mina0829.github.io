@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HW1</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var input;
+		var rand = Math.floor((Math.random()*10)+1);
+		var right = false;
+
+		while(!right){
+			input = window.prompt("please guess an integer from 1 to 10");
+			if(input == rand){
+				right = true;
+				document.writeln("<h3>Answer is " + rand + "<div>Press f5 to start.</h3>");
+			}
+		}
+		
+	</script>
+	
+</body>
+</html>
