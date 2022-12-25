@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JS calculator</title>
+</head>
+<body>
+	<center>
+	<h3><p>JS Calculator</p></h3>
+	<div>Number 1</div>
+	<label>
+		<input id="number1" type="number" size = "25">
+	</label>
+	<div>Number 2</div>
+	<label>
+		<input id="number2" type="number" size = "25">
+	</label>
+
+	<p>Operate way?
+	<label>
+		<select id="operateWay">
+			<option id="1">+</option>
+			<option id="2">-</option>
+			<option id="3">*</option>
+			<option id="4">/</option>
+		</select>
+	</label></p>
+
+	<form action="#">
+		<p><input id="add" type="button" value="Add"></p>
+	</form>
+
+	<h3><p id="result"></p></h3>
+	<p><del>寫好久，主委加碼</del></p>
+	<img id = "meme" src = "123.jpg" alt = "meme" height="280pt">
+	<div>沒有，我都不知道<img id = "cry" src = "222.png" alt = "cry" height="18pt"></div>
+
+	</center>
+
+	<script>
+		var result;
+
+		function start(){
+			var button = document.getElementById("add");
+			button.addEventListener("click", culculate, false);
+		}
+
+		function culculate(){
+			var num1 = document.getElementById("number1").value;
+			var num2 = document.getElementById("number2").value;
+			var opSelected = document.getElementById("operateWay");
+			
+			switch(opSelected.selectedIndex){
+				case 0:
+					result = sum(num1, num2);
+					break;
+				case 1:
+					result = minus(num1, num2);
+					break;
+				case 2:
+					result = multiply(num1, num2);
+					break;
+				case 3:
+					result = divided(num1, num2);
+					break;
+			}
+			updateResult(result);
+		}
+
+		function sum(num1, num2){
+			return Number(num1) + Number(num2);
+		}
+
+		function minus(num1, num2){
+			return Number(num1) - Number(num2);
+		}
+
+		function multiply(num1, num2){
+			return Number(num1) * Number(num2);
+		}
+
+		function divided(num1, num2){
+			return Number(num1) / Number(num2);
+		}
+
+		function updateResult(result){
+			var printResult = document.getElementById("result");
+			printResult.innerHTML = "result = " + result;
+		}
+
+		window.addEventListener("load", start, false);
+	</script>
+</body>
+</html>
